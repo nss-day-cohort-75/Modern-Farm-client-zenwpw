@@ -1,15 +1,15 @@
 const plantsInField = [];
 
 export const addPlant = (seeds) => {
+    if (Array.isArray(seeds))
     for (const seed of seeds) {
-        if (Array.isArray(seeds)) {
             plantsInField.push(seed)
         }
         else {
             plantsInField.push(seeds)
         }
     }
-}
+
     
 
 export const usePlants = () => {

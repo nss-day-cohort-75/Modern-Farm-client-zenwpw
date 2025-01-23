@@ -1,4 +1,4 @@
-import { yearlyPlan } from "./main.js"; 
+import { yearlyPlan } from "./plan.js"; 
 import { createAsparagus } from "./seeds/asparagus.js";
 import { createCorn } from "./seeds/corn.js";
 import { createPotato } from "./seeds/potato.js";
