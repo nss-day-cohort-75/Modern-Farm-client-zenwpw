@@ -1,11 +1,11 @@
-//I think I need to import from fields the plant array?  to access the seeds?
+
 import{usePlants } from "./fields.js"
 
 
-export const harvestPlants = (plantsArray) => {
+export const harvestPlants = (usePlants) => {
     const harvestedSeeds = []
-    for (const plant of plantsArray) {
-        let output
+    for (const plant of usePlants) {
+        let output;
         if (plant.type === "Corn") {
             output = plant.output / 2}
             else {
