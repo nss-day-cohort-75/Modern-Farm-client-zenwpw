@@ -1,4 +1,4 @@
-import { yearlyPlan } from "./plan.js"; 
+import { createPlan } from "./plan.js"; 
 import { createAsparagus } from "./seeds/asparagus.js";
 import { createCorn } from "./seeds/corn.js";
 import { createPotato } from "./seeds/potato.js";
@@ -16,7 +16,7 @@ import { addPlant } from "./field.js";
  * the inner loop refers to each of these inner arrays, allowing us to iterate over
  * each crop type in the ${yearlyPlan}.
  */
-const plantSeeds = (yearlyPlan) => {
+export const plantSeeds = (yearlyPlan) => {
   yearlyPlan.forEach((row) => {
     row.forEach((cropType) => {
       switch (cropType) {
@@ -45,4 +45,6 @@ const plantSeeds = (yearlyPlan) => {
   });
 }
 
+
+const yearlyPlan = createPlan();
 plantSeeds(yearlyPlan);
