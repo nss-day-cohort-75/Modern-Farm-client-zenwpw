@@ -22,3 +22,5 @@ console.log("Harvested Food:", harvestedFood);
 
 // Render the harvested food to the DOM
 Catalog(harvestedFood);
+
+

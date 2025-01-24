@@ -11,6 +11,6 @@ export const addPlant = (seeds) => {
 };
 
 export const usePlants = () => {
-    const fieldClone = structuredClone(plantsInField);
+    const fieldClone = plantsInField.slice();
     return fieldClone;
 };

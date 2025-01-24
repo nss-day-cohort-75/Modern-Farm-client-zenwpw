@@ -24,7 +24,7 @@ export const plantSeeds = (yearlyPlan) => {
           addPlant(createAsparagus());
           break;
         case "Corn":
-          createCorn().forEach((seed) => addPlant(seed));
+          addPlant(createCorn())
           break;
         case "Potato":
           addPlant(createPotato());
@@ -45,6 +45,3 @@ export const plantSeeds = (yearlyPlan) => {
   });
 }
 
-
-const yearlyPlan = createPlan();
-plantSeeds(yearlyPlan);
