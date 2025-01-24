@@ -11,6 +11,7 @@ textarea {
 	font-family: "Comfortaa", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
+    background-color: tomato;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -34,12 +35,17 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+.body {
+    background-color: tomato;
+}
+
 #container { 
     display: grid;
     padding: 16px;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-    background-color: tomato;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .plant {
