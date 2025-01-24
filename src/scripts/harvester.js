@@ -17,7 +17,7 @@ export const harvestPlants = (Plants) => {
                 output = plant.output
             }
             for ( let i = 0; i < output; i++) {
-                harvestedSeeds.push({...plant }) //pushes copy of the plant spread operator creates copy of object
+                harvestedSeeds.push({ ... plant }) //pushes copy of the plant spread operator creates copy of object
             }
 
 }
