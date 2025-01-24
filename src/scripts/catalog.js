@@ -1,6 +1,8 @@
 
-export const Catalog = (harvestedFood, containerElement) => {
+export const Catalog = (harvestedFood) => {
+ let plantHTML = "" ;
     harvestedFood.forEach((seed) => {
-      containerElement.innerHTML += `<section class="plant">${seed.type}</section>`;
+      plantHTML += `<section class="plant">${seed.type}</section>`;
     })
+    return plantHTML;
   }
